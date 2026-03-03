@@ -1,0 +1,23 @@
+--- STARTING API VERIFICATION ---
+
+[1] POST /auth/login (Valid Credentials)
+Status: 200
+✅ Login Successful. Token received.
+
+[2] GET /students (Read All)
+Status: 200
+✅ Get Students Successful. Found 0 students.
+
+[3] POST /students (Create New)
+Status: 201
+✅ Create Student Successful. ID: 69a6df75b60c2edc205b5989
+
+[4] PUT /students/69a6df75b60c2edc205b5989 (Update Existing)
+Status: 200
+✅ Update Student Successful. Course updated to: Advanced API Testing
+
+[5] DELETE /students/69a6df75b60c2edc205b5989 (Delete Existing)
+Status: 200
+❌ Delete Student Failed: { id: '69a6df75b60c2edc205b5989' }
+
+--- API VERIFICATION COMPLETE ---
